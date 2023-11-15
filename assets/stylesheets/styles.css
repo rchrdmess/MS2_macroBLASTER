@@ -159,7 +159,7 @@ a span {
   font-style: italic;
 }
 
-/* --- FITNESS PAGES SETTINGS ---- */
+/* --- FITNESS/CORPORATE PAGES SETTINGS ---- */
 
 article {
   background-color: #CBF83E;
@@ -170,31 +170,46 @@ article {
 
 article h1 {
   color: navy;
-  font-size: 2.5vw;
+  font-size: 4vw;
+}
+
+article h3 {
+  color: navy;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+article h4 {
+  color: navy;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
 article p {
   color: navy;
-  font-size: 2vw;
+  font-size: 2.5vw;
   text-align: justify;
   width: 80%;
   margin-left: 10%;
 }
 
-.important {
-  font-style: italic;
-  text-decoration-line: underline;
+time {
+  color: navy;
+  font-size: 3vw;
   font-weight: bold;
+  padding: 1rem;
 }
 
 article a {
   color: navy;
-  font-size: 2vw;
+  font-size: 2.5vw;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 article ul {
   color: navy;
-  font-size: 2vw;
+  font-size: 2.5vw;
   text-align: justify;
   margin-left: 12%;
   width: 80%;
@@ -202,10 +217,42 @@ article ul {
 
 article ol {
   color: navy;
-  font-size: 2vw;
+  font-size: 2.5vw;
   text-align: justify;
   margin-left: 12%;
   width: 80%;
+}
+
+.important {
+  font-style: italic;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+section h3 {
+  color: navy;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+summary {
+  color: navy;
+  font-size: 3vw;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: left;
+}
+
+details p {
+  color: navy;
+  font-size: 2.5vw;
+}
+
+details a {
+  color: navy;
+  font-size: 2.5vw;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* --- SELECTION BOX SETTINGS ---- */
@@ -223,8 +270,8 @@ article ol {
 
 input[type=search], select, textarea {
   text-align: left;
-  width: 24vw;
-  padding: 2vw;
+  width: 20vw;
+  padding: 1.5vw;
   border: 0.0625em solid navy;
   border-radius: 0.625em;
   box-sizing: border-box;
@@ -255,7 +302,7 @@ input[type=submit]:hover {
   color: navy;
   font-weight: bold;
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 :-ms-input-placeholder {
@@ -270,31 +317,6 @@ input[type=submit]:hover {
   font-weight: bold;
   text-align: center;
   font-size: 2vw;
-}
-
-/* --- LOCATION LINKS ---- */
-
-#openMapsButtonGyms {
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 0.875em;
-  font-weight: normal;
-  text-decoration: none;
-  padding-left: 25%;
-  font-style: normal;
-}
-
-#openMapsButtonGyms:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
-
-#openMapsButtonNutrition {
-  cursor: pointer;
-  color: navy;
-  font-size: 2vw;
-  font-weight: normal;
-  text-decoration: underline;
 }
 
 /* --- FOOTER SETTINGS ---- */
@@ -388,37 +410,22 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
+#gym {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+#gym:hover {
+  text-decoration: underline;
+}
+
 .base_left a:hover,.base_right a:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
-}
-
-/* --- CORPORATE PAGES ---- */
-
-section h3 {
-  color: navy;
-  font-size: 4.5vw;
-  font-weight: bold;
-}
-
-summary {
-  color: navy;
-  font-size: 3vw;
-  font-weight: bold;
-  padding: 1rem;
-  text-align: left;
-}
-
-details p {
-  color: navy;
-  font-size: 2.5vw;
-}
-
-details a {
-  color: navy;
-  font-size: 2.5vw;
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 /* --- 404 SETTINGS ---- */
