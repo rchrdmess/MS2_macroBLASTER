@@ -1,0 +1,568 @@
+* {
+  box-sizing: border-box;  /* Box-sizing is used across all elements to include the padding and border in the total size. */
+}
+
+body {  /* The website's background colour and standard font style are defined here. */
+  background-color: #ABA8A9;
+  font-family:  Helvetica, avenir, verdana, arial, sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ABA8A9;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  background-color: navy;
+}
+
+.logo_link {
+  font-family:  Do Hyeon;
+  color: yellow;
+  font-size: 10vw;
+  background-color: navy;
+  text-decoration-line: none;
+}
+
+a span {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1.2vh;
+  font-style: italic;
+}
+
+.base span {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5.5px;
+  font-style: italic;
+}
+
+.header h2 {
+  color: #ffffff;
+  font-size: 3.5vw;
+  font-weight: bold;
+}
+
+.main {
+  background-color: #CBF83E;
+  width: 90%;
+  padding: 1.25em;
+  margin: auto;
+}
+
+.main p {
+  color: navy;
+  font-size: 4.5vw;
+  font-weight: bold;
+  padding-top: 0.925rem;
+}
+
+.main table {
+  border: 2px solid navy;
+  margin: auto;
+}
+
+.main th {
+  border: 1px solid navy;
+  color: navy;
+  background-color: #f1f1f1;
+  font-size: 4.5vw;
+  padding: 1rem;
+  text-align: right;
+}
+
+.main td {
+  border: 1px solid navy;
+  color: navy;
+  background-color: #ffffff;
+  font-size: 4.5vw;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  width: 22vw;
+  border-radius: 0.625em;
+  cursor: pointer;
+  padding: 0.625em;
+  text-align: center;
+}
+
+.activity_button {
+  display: inline-block;
+  width: 12vw;
+  border-radius: 0.625em;
+  cursor: pointer;
+  padding: 0.625em;
+  text-align: center;
+}
+
+.reload {
+  background-color: green;
+}
+
+.reload:hover {
+  opacity: 0.7;
+  color: #CBF83E;
+}
+
+.button p {
+  color: #ffffff;
+  font-size: 3vw;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+}
+
+.activity_button p {
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+}
+
+.spacer {
+  display: inline-block;
+  width: 2vw;
+}
+
+.activity_spacer {
+  display: inline-block;
+  width: 0.75vw;
+}
+
+article {
+  background-color: #CBF83E;
+  width: 90%;
+  padding: 1.25em;
+  margin: auto;
+}
+
+.logo {
+  font-family:  Do Hyeon;
+  color: navy;
+  font-size: 2vw;
+  text-decoration-line: none;
+}
+
+.disclaimer {
+  font-style: italic;
+  color: navy;
+  font-size: 1vw;
+}
+
+.blaster {
+  text-decoration-line: underline;
+  font-style: italic;
+}
+
+article h1 {
+  color: navy;
+  font-size: 2.5vw;
+}
+
+article p {
+  color: navy;
+  font-size: 2vw;
+  text-align: justify;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.important {
+  font-style: italic;
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+
+article a {
+  color: navy;
+  font-size: 2vw;
+}
+
+article ul {
+  color: navy;
+  font-size: 2vw;
+  text-align: justify;
+  margin-left: 12%;
+  width: 80%;
+}
+
+article ol {
+  color: navy;
+  font-size: 2vw;
+  text-align: justify;
+  margin-left: 12%;
+  width: 80%;
+}
+
+.container {
+  padding-bottom: 2.5rem;
+}
+
+.container label {
+  color: navy;
+  font-size: 4.5vw;
+  font-weight: bold;
+  padding-top: 0.925rem;
+}
+
+input[type=search], select, textarea {
+  text-align: left;
+  width: 24vw;
+  padding: 2vw;
+  border: 0.0625em solid navy;
+  border-radius: 0.625em;
+  box-sizing: border-box;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  resize: vertical;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  background-color: green;
+  color: #ffffff;
+  padding: 2em 0.75em;
+  border: none;
+  border-radius: 0.625em;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 3.5vw;
+  width: 50%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.7;
+  color: #CBF83E;
+}
+
+::placeholder {
+  color: navy;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2vw;
+}
+
+:-ms-input-placeholder {
+  color: navy;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2vw;
+}
+
+::-ms-input-placeholder {
+  color: navy;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2vw;
+}
+
+/* --- LOCATION LINKS ---- */
+
+#openMapsButtonGyms {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 0.875em;
+  font-weight: normal;
+  text-decoration: none;
+  padding-left: 25%;
+  font-style: normal;
+}
+
+#openMapsButtonGyms:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+#openMapsButtonNutrition {
+  cursor: pointer;
+  color: navy;
+  font-size: 2vw;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+/* --- FOOTER SETTINGS ---- */
+
+.base { /* The footer section is controlled here. */
+  width: 100%;
+  margin: 0;
+  font-family: Helvetica, avenir, verdana, arial, sans-serif;
+  border-top: 0.0625em;
+}
+
+.base_r-container {
+  display: table;
+  width: 100%;
+}
+
+.base_left {
+  background-color: #ABA8A9;
+  color: #ffffff;
+  text-align: left;
+  display: table-cell;
+  padding: 2%;
+  border: 0.9375em;
+  width: 33.33%;
+}
+
+.base_middle {
+  background-color: #ABA8A9;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  color: #662211;
+  display: table-cell;
+  padding: 1vw;
+  border: 0.9375em;
+  width: 33.33%;
+}
+
+.base_right {
+  background-color: #ABA8A9;
+  color: #ffffff;
+  text-align: left;
+  display: table-cell;
+  padding: 2%;
+  border: 0.9375em;
+  width: 33.33%;
+}
+
+.base h2 {
+  font-family:  Do Hyeon;
+  color: yellow;
+  font-size: 2.5em;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: navy;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.base h3 {
+  color: #CBF83E;
+  font-size: 0.875em;
+  font-weight: bold;
+  padding-left: 20%;
+}
+
+.base_left a,.base_right a {
+  color: #ffffff;
+  font-size: 0.875em;
+  font-weight: normal;
+  text-decoration: none;
+  padding-left: 25%;
+  cursor: pointer;
+}
+
+.base_left span,.base_right span {
+  color: #ffffff;
+  font-size: 0.875em;
+  font-weight: normal;
+  text-decoration: none;
+  padding-left: 25%;
+  cursor: pointer;
+}
+
+.base_middle a {
+  color: #ffffff;
+  font-size: 0.875em;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.base_left a:hover,.base_right a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+/* --- CORPORATE PAGES ---- */
+
+section h3 {
+  color: navy;
+  font-size: 4.5vw;
+  font-weight: bold;
+}
+
+summary {
+  color: navy;
+  font-size: 3vw;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: left;
+}
+
+details p {
+  color: navy;
+  font-size: 2.5vw;
+}
+
+details a {
+  color: navy;
+  font-size: 2.5vw;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* --- 404 SETTINGS ---- */
+
+.main-404 {
+  background-color: #CBF83E;
+  width: 90%;
+  padding: 1.25em;
+  margin: auto;
+  text-align: center;
+}
+
+.main-404 p {
+  margin: auto;
+  color: navy;
+  width: 60%;
+  font-size: 4vw;
+  font-weight: bold;
+  padding-top: 0.925rem;
+}
+
+.button-404 {
+  display: inline-block;
+  width: 40vw;
+  border-radius: 0.625em;
+  cursor: pointer;
+  padding: 0.625em;
+  text-align: center;
+}
+
+.button-404 p {
+  color: #ffffff;
+  font-size: 2.75vw;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+}
+
+/* --- ICON SETTINGS ---- */
+
+.fa-twitter {
+  font-size: 1.125em;
+  color: #ffffff;
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+  padding-left: 0.0625em;
+  padding-right: 0.0625em;
+}
+
+.fa-facebook {
+  font-size: 1.125em;
+  color: white;
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+  padding-left: 0.0625em;
+  padding-right: 0.0625em;
+}
+
+.fa-linkedin {
+  font-size: 1.125em;
+  color: white;
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+  padding-left: 0.0625em;
+  padding-right: 0.0625em;
+}
+
+.fa-youtube {
+  font-size: 1.125em;
+  color: white;
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+  padding-left: 0.0625em;
+  padding-right: 0.0625em;
+}
+
+.fa-instagram {
+  font-size: 1.125em;
+  color: white;
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+  padding-left: 0.0625em;
+  padding-right: 0.0625em;
+}
+
+.fa-pinterest {
+  font-size: 1.125em;
+  color: white;
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+  padding-left: 0.0625em;
+  padding-right: 0.0625em;
+}
+
+.fa-twitter:hover {
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.fa-linkedin:hover {
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.fa-youtube:hover {
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.fa-pinterest:hover {
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+/* --- MEDIA QUERY SETTINGS ---- */
+
+@media screen and (max-width: 590px) { /* This media query controls the behaviour of each section on smaller screens. */
+.header span {
+  text-decoration-thickness: 7px;
+}
+.base_left, .base_middle, .base_right {
+  display: block;
+  width: 100%;
+}
+.base_left h3, .base_right h3 {
+  padding-left: 33%;
+}
+.base_left a, .base_right a {
+  padding-left: 38%;
+}
+#openMapsButtonGyms {
+  padding-left: 38%;
+}
+::placeholder {
+  font-size: 2.2vw;
+}
+
+:-ms-input-placeholder {
+  font-size: 2.2vw;
+}
+
+::-ms-input-placeholder {
+  font-size: 2.2vw;
+}
+}
