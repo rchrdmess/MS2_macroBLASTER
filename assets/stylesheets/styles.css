@@ -11,6 +11,8 @@ body {  /* The website's background colour and standard font style are defined h
   padding: 0;
 }
 
+/* --- HEADER SETTINGS ---- */
+
 .header {
   background-color: #ABA8A9;
   padding-bottom: 20px;
@@ -45,6 +47,8 @@ a span {
   font-size: 3.5vw;
   font-weight: bold;
 }
+
+/* --- MAIN SECTION (GREEN BOX) SETTINGS ---- */
 
 .main {
   background-color: #CBF83E;
@@ -121,7 +125,7 @@ a span {
 
 .activity_button p {
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   text-align: center;
   font-weight: bold;
   padding: 0;
@@ -134,14 +138,7 @@ a span {
 
 .activity_spacer {
   display: inline-block;
-  width: 0.75vw;
-}
-
-article {
-  background-color: #CBF83E;
-  width: 90%;
-  padding: 1.25em;
-  margin: auto;
+  width: 0.5vw;
 }
 
 .logo {
@@ -160,6 +157,15 @@ article {
 .blaster {
   text-decoration-line: underline;
   font-style: italic;
+}
+
+/* --- FITNESS PAGES SETTINGS ---- */
+
+article {
+  background-color: #CBF83E;
+  width: 90%;
+  padding: 1.25em;
+  margin: auto;
 }
 
 article h1 {
@@ -201,6 +207,8 @@ article ol {
   margin-left: 12%;
   width: 80%;
 }
+
+/* --- SELECTION BOX SETTINGS ---- */
 
 .container {
   padding-bottom: 2.5rem;
