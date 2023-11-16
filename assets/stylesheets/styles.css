@@ -3,7 +3,7 @@
 }
 
 body {  /* The website's background colour and standard font style are defined here. */
-  background-color: #ABA8A9;
+  background-color: #000080;
   font-family:  Helvetica, avenir, verdana, arial, sans-serif;
   text-align: center;
   width: 100%;
@@ -14,7 +14,7 @@ body {  /* The website's background colour and standard font style are defined h
 /* --- HEADER SETTINGS ---- */
 
 .header {
-  background-color: #ABA8A9;
+  background-color: #000080;
   padding-bottom: 20px;
 }
 
@@ -334,7 +334,7 @@ input[type=submit]:hover {
 }
 
 .base_left {
-  background-color: #ABA8A9;
+  background-color: #000080;
   color: #ffffff;
   text-align: left;
   display: table-cell;
@@ -344,7 +344,7 @@ input[type=submit]:hover {
 }
 
 .base_middle {
-  background-color: #ABA8A9;
+  background-color: #000080;
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
@@ -356,7 +356,7 @@ input[type=submit]:hover {
 }
 
 .base_right {
-  background-color: #ABA8A9;
+  background-color: #000080;
   color: #ffffff;
   text-align: left;
   display: table-cell;
@@ -410,7 +410,7 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
-#openMapsButton {
+#gym {
   color: #ffffff;
   font-size: 1.5em;
   font-weight: bold;
@@ -419,7 +419,7 @@ input[type=submit]:hover {
   text-align: center;
 }
 
-#openMapsButton:hover {
+#gym:hover {
   text-decoration: underline;
 }
 
