@@ -410,7 +410,7 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
-#gym {
+#openMapsButton {
   color: #ffffff;
   font-size: 1.5em;
   font-weight: bold;
@@ -419,7 +419,7 @@ input[type=submit]:hover {
   text-align: center;
 }
 
-#gym:hover {
+#openMapsButton:hover {
   text-decoration: underline;
 }
 
