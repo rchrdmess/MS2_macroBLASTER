@@ -261,15 +261,20 @@ details a {
   padding-bottom: 2.5rem;
 }
 
-.container label {
-  display: none;
+.search_box {
+  display: inline-block;
+}
+
+.search_box label {
+  font-size: 2.5vw;
+  display: inline-block;
   color: navy;
-  font-size: 4.5vw;
   font-weight: bold;
-  padding-top: 0.925rem;
+  padding-bottom: 0.25rem;
 }
 
 input[type=search], select, textarea {
+  display: inline-block;
   text-align: left;
   width: 20vw;
   padding: 1.5vw;
@@ -303,7 +308,8 @@ input[type=submit]:hover {
   color: navy;
   font-weight: bold;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 2vw;
+  padding-left: 10%;
 }
 
 :-ms-input-placeholder {
@@ -311,6 +317,7 @@ input[type=submit]:hover {
   font-weight: bold;
   text-align: center;
   font-size: 2vw;
+  padding-left: 10%;
 }
 
 ::-ms-input-placeholder {
@@ -318,6 +325,7 @@ input[type=submit]:hover {
   font-weight: bold;
   text-align: center;
   font-size: 2vw;
+  padding-left: 10%;
 }
 
 /* --- FOOTER SETTINGS ---- */
@@ -568,14 +576,14 @@ input[type=submit]:hover {
   padding-left: 38%;
 }
 ::placeholder {
-  font-size: 2.2vw;
+  padding-left: 25%;
 }
 
 :-ms-input-placeholder {
-  font-size: 2.2vw;
+  padding-left: 25%;
 }
 
 ::-ms-input-placeholder {
-  font-size: 2.2vw;
+  padding-left: 25%;
 }
 }
