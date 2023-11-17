@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>macroBLASTER</title>
+ <meta name="description" content="Blast your macros and get fit!">
+ <meta name="keywords" content="macros, macroblaster, macronutrients, heathy lifestyle, healthy eating, get fit, get healthy, being healthy, get beach body ready">
+ <meta property="og:title" content="Blast your macros and get fit!">
+ <meta property="og:url" content="https://www.macroblaster.co.uk">
+ <meta property="og:description" content="Blast your macros and get fit!">
+ <meta property="og:image" content="https://www.macroblaster.co.uk/assets/icons/apple-touch-icon-180x180.webp">
+ <meta property="og:site_name" content="macroBLASTER">
+ <meta property="og:locale" content="en_GB">
+ <meta property="og:image:type" content="image/webp">
+ <meta property="og:type" content="website">
+ <meta name="twitter:title" content="macroBLASTER">
+ <meta name="twitter:description" content="Blast your macros and get fit!">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:image" content="https://www.macroblaster.co.uk/assets/icons/apple-touch-icon-180x180.webp">
+ <meta name="twitter:image:alt" content="macroBLASTER">
+ <meta name="twitter:site" content="@ macroBLASTER">
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.webp">
+   <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-touch-icon-57x57.webp">
+   <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-touch-icon-72x72.webp">
+   <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-touch-icon-76x76.webp">
+   <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-touch-icon-114x114.webp">
+   <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-touch-icon-120x120.webp">
+   <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-touch-icon-144x144.webp">
+   <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-touch-icon-152x152.webp">
+   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180x180.webp">
+   <link href="assets/stylesheets/styles.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div class='header'>
+  <h1><a class='logo_link' href='index.htm' aria-label="A link to macroBLASTER's home page"><sub>macro</sub><span>BLASTER</span></a></h1>
+   <h2>Helping you stay in shape!</h2>
+ </div>
+  <div class='main' id='results'>
+   <p>ARE YOU ...</p>
+    <div role="button" class='button' id='male' style='background-color: #5398fe;'>
+     <p>MALE</p>
+    </div>
+    <div class='spacer'>
+ <br>
+    </div>
+    <div role="button" class='button' id='female' style='background-color: #f77fbe;'>
+     <p>FEMALE</p>
+    </div>
+ <br>
+   <p>DO YOU WANT TO ...</p>
+    <div role="button" class='button' id='bulk' style='background-color: #7B3F00;'>
+     <p>BULK</p>
+    </div>
+    <div class='spacer'>
+ <br>
+    </div>
+    <div role="button" class='button' id='cut' style='background-color: #D2B48C;'>
+     <p>CUT</p>
+    </div>
+    <div class='spacer'>
+ <br>
+    </div>
+    <div role="button" class='button' id='maintain' style='background-color: #B87333;'>
+     <p>MAINTAIN</p>
+    </div>
+<br>
+<br>
+<br>
+    <div class='container'>
+     <form method="post" name="values">
+     <label for="ages">PLEASE SELECT YOUR ...</label>
+<br>
+<br>
+      <input type="search" list="ageList" name="ages" id="ages" placeholder="AGE" required aria-required="true">
+       <datalist id='ageList'></datalist>
+    <div class='spacer'>
+ <br>
+    </div>
+      <input type="search" list="heightList" name="heights" id="heights" placeholder="HEIGHT (cm)" required aria-required="true">
+       <datalist id='heightList'></datalist>
+    <div class='spacer'>
+ <br>
+    </div>
+      <input type="search" list="weightList" name="weights" id="weights" placeholder="WEIGHT (kg)" required aria-required="true">
+       <datalist id='weightList'></datalist>
+ <br>
+   <p>WHAT IS YOUR EXERCISE LEVEL ...</p>
+    <div role="button" class='activity_button' id='none' style='background-color: #F6BDC0;'>
+     <p>NONE</p>
+     <p>Little to no<br>exercise ever</p>
+    </div>
+    <div class='activity_spacer'>
+ <br>
+    </div>
+    <div role="button" class='activity_button' id='light' style='background-color: #F1959B;'>
+     <p>LIGHT</p>
+     <p>Exercise 1-3<br>days/week</p>
+    </div>
+    <div class='activity_spacer'>
+ <br>
+    </div>
+    <div role="button" class='activity_button' id='medium' style='background-color: #F07470;'>
+     <p>MEDIUM</p>
+     <p>Exercise 3-5<br>days/week</p>
+    </div>
+    <div class='activity_spacer'>
+ <br>
+    </div>
+    <div role="button" class='activity_button' id='high' style='background-color: #EA4C46;'>
+     <p>HIGH</p>
+     <p>Exercise 6-7<br>days/week</p>
+    </div>
+    <div class='activity_spacer'>
+ <br>
+    </div>
+    <div role="button" class='activity_button' id='extreme' style='background-color: #DC1C13;'>
+     <p>EXTREME</p>
+     <p>Exercise &<br>physical job</p>
+    </div>
+<br>
+ <br>
+ <br>
+ <br>
+       <input type="submit" id='submit' formenctype="application/x-www-form-urlencoded" value="GET YOUR macros">
+     </form>
+    </div>
+  </div>
+ <div class="base" role="contentinfo">
+ <div class="base_r-container">
+  <div class="base_left">
+   <h3>More Fitness</h3>
+<a href="what_are_macros.htm" aria-label="A link to macroBLASTER's Macros page">What are Macros?</a>
+ <br>
+    <a href="warming_up.htm" aria-label="A link to macroBLASTER's Warming Up page">Warming Up</a>
+ <br>
+    <a href="aerobics.htm" aria-label="A link to macroBLASTER's Aerobics page">Aerobics</a>
+ <br>
+    <a href="resistance_training.htm" aria-label="A link to macroBLASTER's Resistance Training page">Resistance Training</a>
+<br>
+<a href="injury_rehab.htm" aria-label="A link to macroBLASTER's Recovering From Injury page">Injury Rehab</a>
+  </div>
+  <div class="base_middle">
+   <h2 id="toTop"><sub>macro</sub><span>BLASTER</span></h2>
+    <div id='openMapsButton' role="button">Find A Gym</div>
+ <br>
+ <br>
+ <br>
+     <a href="https://twitter.com/" target="_blank" aria-label="Go to our twitter page (opens in new tab)">
+      <i class="fab fa-twitter"></i></a>
+     <a href="https://facebook.com/" target="_blank" aria-label="Go to our facebook page (opens in new tab)">
+      <i class="fab fa-facebook"></i></a>
+     <a href="https://linkedin.com/" target="_blank" aria-label="Go to our LinkedIn page (opens in new tab)">
+      <i class="fab fa-linkedin"></i></a>
+     <a href="https://youtube.com/" target="_blank" aria-label="Go to our youtube page (opens in new tab)">
+      <i class="fab fa-youtube"></i></a>
+     <a href="https://instagram.com/" target="_blank" aria-label="Go to our instagram page (opens in new tab)">
+      <i class="fab fa-instagram"></i></a>
+     <a href="https://pinterest.com/" target="_blank" aria-label="Go to our Pinterest page (opens in new tab)">
+      <i class="fab fa-pinterest"></i></a>
+  </div>
+  <div class="base_right">
+   <h3>Company Information</h3>
+    <a href="press.htm" aria-label="A link to macroBLASTER's press releases page">Press Releases</a>
+ <br>
+    <a href="user_agreement.htm" aria-label="A link to macroBLASTER's User Agreement page">User Agreement</a>
+ <br>
+    <a href="privacy.htm" aria-label="A link to macroBLASTER's Privacy Statement page">Privacy Statement</a>
+ <br>
+    <a href="faqs.htm" aria-label="A link to macroBLASTER's FAQ page">FAQs</a>
+ <br>
+    <a href="jobs.htm" aria-label="A link to macroBLASTER's Jobs page">Jobs</a>
+  </div>
+ </div>
+</div>
+ <script src="assets/javascript/all_input_output.js"></script>
+ <script src="assets/javascript/location.js"></script>
+ <script src="assets/javascript/to_top.js"></script>
+</body>
+</html>
