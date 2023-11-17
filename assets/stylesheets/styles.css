@@ -262,6 +262,7 @@ details a {
 }
 
 .container label {
+  display: none;
   color: navy;
   font-size: 4.5vw;
   font-weight: bold;
