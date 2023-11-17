@@ -99,7 +99,7 @@ a span {
 
 .activity_button {
   display: inline-block;
-  width: 12vw;
+  width: 14.77vw;
   border-radius: 0.625em;
   cursor: pointer;
   padding: 0.625em;
@@ -125,7 +125,7 @@ a span {
 
 .activity_button p {
   color: white;
-  font-size: 1.25vw;
+  font-size: 1.84vw;
   text-align: center;
   font-weight: bold;
   padding: 0;
@@ -138,7 +138,7 @@ a span {
 
 .activity_spacer {
   display: inline-block;
-  width: 0.5vw;
+  width: 0.25vw;
 }
 
 .logo {
@@ -282,7 +282,7 @@ input[type=search], select, textarea {
 }
 
 input[type=submit] {
-  background-color: green;
+  background-color: #025800;
   color: #ffffff;
   padding: 2em 0.75em;
   border: none;
