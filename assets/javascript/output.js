@@ -193,7 +193,7 @@ let waterOut = water.toFixed(2);
   <th>Daily Water *:</th><td>${waterOut} litres</td>
  </tr>
 </table>
-<p style='font-size:2vw;'>* Sugar-free soft drinks as well as tea and coffee made with fat free milk can all be included your water intake.</p>
+<p style='font-size:2vw;'>* Sugar-free soft drinks as well as tea and coffee made with fat free milk can all be included in your water intake.</p>
 <p style='font-style:italic;font-size:2vw;'>** Recommended macros are based on your selections and calculated using the Harris-Benedict equation. Factors such as muscle mass, body composition, and metabolism can affect your actual requirements. If you have any underlying health conditions or fitness concerns, it's advisable to consult with a healthcare professional or a registered dietitian for personalized guidance **</i></p>
  <br>
  <br>
