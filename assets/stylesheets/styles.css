@@ -23,7 +23,7 @@ body {  /* The website's background colour and standard font style are defined h
 }
 
 .logo_link {
-  font-family:  Do Hyeon;
+  font-family: 'Do Hyeon', sans-serif;
   color: yellow;
   font-size: 10vw;
   background-color: navy;
@@ -142,7 +142,7 @@ a span {
 }
 
 .logo {
-  font-family:  Do Hyeon;
+  font-family: 'Do Hyeon', sans-serif;
   color: navy;
   font-size: 2vw;
   text-decoration-line: none;
@@ -366,7 +366,7 @@ input[type=submit]:hover {
 }
 
 .base h2 {
-  font-family:  Do Hyeon;
+  font-family: 'Do Hyeon', sans-serif;
   color: yellow;
   font-size: 2.5em;
   font-weight: bold;
@@ -410,7 +410,7 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
-#gym {
+#openMapsButton {
   color: #ffffff;
   font-size: 1.5em;
   font-weight: bold;
@@ -419,7 +419,7 @@ input[type=submit]:hover {
   text-align: center;
 }
 
-#gym:hover {
+#openMapsButton:hover {
   text-decoration: underline;
 }
 
@@ -564,9 +564,6 @@ input[type=submit]:hover {
   padding-left: 33%;
 }
 .base_left a, .base_right a {
-  padding-left: 38%;
-}
-#openMapsButtonGyms {
   padding-left: 38%;
 }
 ::placeholder {
