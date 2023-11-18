@@ -59,7 +59,7 @@ a span {
 
 .main p {
   color: navy;
-  font-size: 4.5vw;
+  font-size: 4vw;
   font-weight: bold;
   padding-top: 0.925rem;
 }
@@ -99,7 +99,7 @@ a span {
 
 .activity_button {
   display: inline-block;
-  width: 14.15vw;
+  width: 13.05vw;
   border-radius: 0.625em;
   cursor: pointer;
   padding: 0.625em;
@@ -107,7 +107,7 @@ a span {
 }
 
 .reload {
-  background-color: green;
+  background-color: #025800;
 }
 
 .reload:hover {
@@ -125,10 +125,10 @@ a span {
 
 .activity_button p {
   color: white;
-  font-size: 1.8vw;
+  font-size: 1.33vw;
   text-align: center;
-  font-weight: bold;
   padding: 0;
+  font-weight: bold;
 }
 
 .spacer {
@@ -275,7 +275,7 @@ details a {
 
 input[type=search], select, textarea {
   display: inline-block;
-  text-align: left;
+  text-align: center;
   width: 20vw;
   padding: 1.5vw;
   border: 0.0625em solid navy;
@@ -306,26 +306,20 @@ input[type=submit]:hover {
 
 ::placeholder {
   color: navy;
-  font-weight: bold;
-  text-align: center;
   font-size: 2vw;
-  padding-left: 10%;
+  padding-left: 0%;
 }
 
 :-ms-input-placeholder {
   color: navy;
-  font-weight: bold;
-  text-align: center;
   font-size: 2vw;
-  padding-left: 10%;
+  padding-left: 0%;
 }
 
 ::-ms-input-placeholder {
   color: navy;
-  font-weight: bold;
-  text-align: center;
   font-size: 2vw;
-  padding-left: 10%;
+  padding-left: 0%;
 }
 
 /* --- FOOTER SETTINGS ---- */
