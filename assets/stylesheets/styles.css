@@ -381,14 +381,14 @@ input[type=submit]:hover {
 
 .base h3 {
   color: #CBF83E;
-  font-size: 0.875em;
+  font-size: 1.5em;
   font-weight: bold;
   padding-left: 20%;
 }
 
 .base_left a,.base_right a {
   color: #ffffff;
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: normal;
   text-decoration: none;
   padding-left: 25%;
