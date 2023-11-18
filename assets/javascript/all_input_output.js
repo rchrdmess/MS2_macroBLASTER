@@ -13,7 +13,7 @@ female.addEventListener("click", changeFemaleBg);
 function changeMaleBg(event) {
   if (female.style.backgroundColor === "green") {
   this.style.backgroundColor = "green";
-  female.style.backgroundColor = "#f77fbe";
+  female.style.backgroundColor = "#7b0077";
   } else {
   this.style.backgroundColor = "green";
   }
@@ -22,7 +22,7 @@ function changeMaleBg(event) {
 function changeFemaleBg(event) {
   if (male.style.backgroundColor === "green") {
   this.style.backgroundColor = "green";
-  male.style.backgroundColor = "#5398fe";
+  male.style.backgroundColor = "#000067";
   } else {
   this.style.backgroundColor = "green";
   }
@@ -31,7 +31,6 @@ function changeFemaleBg(event) {
 // Functions to change the goal button backgrounds when clicked
 
 let goal;
-let alert;
 
 let bulk = document.getElementById("bulk");
 bulk.addEventListener("click", changeBulkBg);
@@ -43,12 +42,12 @@ let maintain = document.getElementById("maintain");
 maintain.addEventListener("click", changeMaintainBg);
 
 function changeBulkBg(event) {
-  alert("A resistance training routine is recommended when choosing this option.");
+  window.alert("A resistance training routine is recommended when choosing this option.");
   if (cut.style.backgroundColor === "green"
  || maintain.style.backgroundColor === "green") {
   bulk.style.backgroundColor = "green";
-  cut.style.backgroundColor = "#D2B48C";
-  maintain.style.backgroundColor = "#B87333";
+  cut.style.backgroundColor = "#005352";
+  maintain.style.backgroundColor = "#004544";
   } else {
   bulk.style.backgroundColor = "green";
   }
@@ -58,8 +57,8 @@ function changeCutBg(event) {
   if (bulk.style.backgroundColor === "green"
  || maintain.style.backgroundColor === "green") {
   cut.style.backgroundColor = "green";
-  bulk.style.backgroundColor = "#7B3F00";
-  maintain.style.backgroundColor = "#B87333";
+  bulk.style.backgroundColor = "#003938";
+  maintain.style.backgroundColor = "#004544";
   } else {
   cut.style.backgroundColor = "green";
   }
@@ -69,8 +68,8 @@ function changeMaintainBg(event) {
   if (bulk.style.backgroundColor === "green"
  || cut.style.backgroundColor === "green") {
   maintain.style.backgroundColor = "green";
-  bulk.style.backgroundColor = "#7B3F00";
-  cut.style.backgroundColor = "#D2B48C";
+  bulk.style.backgroundColor = "#003938";
+  cut.style.backgroundColor = "#005352";
   } else {
   maintain.style.backgroundColor = "green";
   }
@@ -145,10 +144,10 @@ function changeNoneBg(event) {
  || high.style.backgroundColor === "green"
  || extreme.style.backgroundColor === "green") {
   this.style.backgroundColor = "green";
-  light.style.backgroundColor = "#F1959B";
-  medium.style.backgroundColor = "#F07470";
-  high.style.backgroundColor = "#EA4C46";
-  extreme.style.backgroundColor = "#DC1C13";
+  light.style.backgroundColor = "#7b0000";
+  medium.style.backgroundColor = "#790001";
+  high.style.backgroundColor = "#6a0001";
+  extreme.style.backgroundColor = "#580001";
   } else {
   this.style.backgroundColor = "green";
   }
@@ -160,10 +159,10 @@ function changeLightBg(event) {
  || high.style.backgroundColor === "green"
  || extreme.style.backgroundColor === "green") {
   this.style.backgroundColor = "green";
-  none.style.backgroundColor = "#F6BDC0";
-  medium.style.backgroundColor = "#F07470";
-  high.style.backgroundColor = "#EA4C46";
-  extreme.style.backgroundColor = "#DC1C13";
+  none.style.backgroundColor = "#8b0001";
+  medium.style.backgroundColor = "#790001";
+  high.style.backgroundColor = "#6a0001";
+  extreme.style.backgroundColor = "#580001";
   } else {
   this.style.backgroundColor = "green";
   }
@@ -175,10 +174,10 @@ function changeMediumBg(event) {
  || high.style.backgroundColor === "green"
  || extreme.style.backgroundColor === "green") {
   this.style.backgroundColor = "green";
-  none.style.backgroundColor = "#F6BDC0";
-  light.style.backgroundColor = "#F1959B";
-  high.style.backgroundColor = "#EA4C46";
-  extreme.style.backgroundColor = "#DC1C13";
+  none.style.backgroundColor = "#8b0001";
+  light.style.backgroundColor = "#7b0000";
+  high.style.backgroundColor = "#6a0001";
+  extreme.style.backgroundColor = "#580001";
   } else {
   this.style.backgroundColor = "green";
   }
@@ -190,10 +189,10 @@ function changeHighBg(event) {
  || medium.style.backgroundColor === "green"
  || extreme.style.backgroundColor === "green") {
   this.style.backgroundColor = "green";
-  none.style.backgroundColor = "#F6BDC0";
-  light.style.backgroundColor = "#F1959B";
-  medium.style.backgroundColor = "#F07470";
-  extreme.style.backgroundColor = "#DC1C13";
+  none.style.backgroundColor = "#8b0001";
+  light.style.backgroundColor = "#7b0000";
+  medium.style.backgroundColor = "#790001";
+  extreme.style.backgroundColor = "#580001";
   } else {
   this.style.backgroundColor = "green";
   }
@@ -205,16 +204,16 @@ function changeExtremeBg(event) {
  || medium.style.backgroundColor === "green"
  || high.style.backgroundColor === "green") {
   this.style.backgroundColor = "green";
-  none.style.backgroundColor = "#F6BDC0";
-  light.style.backgroundColor = "#F1959B";
-  medium.style.backgroundColor = "#F07470";
-  high.style.backgroundColor = "#EA4C46";
+  none.style.backgroundColor = "#8b0001";
+  light.style.backgroundColor = "#7b0000";
+  medium.style.backgroundColor = "#790001";
+  high.style.backgroundColor = "#6a0001";
   } else {
   this.style.backgroundColor = "green";
   }
 }
 
-// Functions to change the activity level button backgrounds when clicked
+// Functions to handle the datalist inputs
 
 function convertToNumber(value) {
   return +value;
@@ -256,7 +255,7 @@ function handleAgeSelection () {
   numericAge = convertToNumber(selectedAge);
 }
 
-// Functions to calculate the output results
+// Functions to calculate the output results. (event.preventDefault() solution provided by chatgpt, after much discussion, to prevent form submitting until all inputs selected. Chatgpt also advised to place window. before each alert function to stop JSLint thinking alert was a variable.)
 
 let activityFactor;
 let exercise;
@@ -273,6 +272,24 @@ submit.addEventListener("click", showResults);
 
 function showResults (event) {
 
+if (!numericAge) {
+  window.alert("PLEASE ENTER YOUR AGE");
+  event.preventDefault();
+  return;
+}
+
+if (!numericHeight) {
+  window.alert("PLEASE ENTER YOUR HEIGHT");
+  event.preventDefault();
+  return;
+}
+
+if (!numericWeight) {
+  window.alert("PLEASE ENTER YOUR WEIGHT");
+  event.preventDefault();
+  return;
+}
+
   let bmrMale = 88.362 + (13.397 * numericWeight) + (4.799 * numericHeight) - (5.677 * numericAge);
   let bmrFemale = 447.593 + (9.247 * numericWeight) + (3.098 * numericHeight) - (4.330 * numericAge);
 
@@ -283,7 +300,9 @@ function showResults (event) {
   bmr = bmrFemale;
   gender = "Female";
   } else {
-  alert("PLEASE SELECT YOUR ASSIGNED GENDER");
+  window.alert("PLEASE SELECT YOUR ASSIGNED GENDER");
+  event.preventDefault();
+  return;
   }
 
   if (none.style.backgroundColor === "green") {
@@ -312,7 +331,9 @@ function showResults (event) {
   exerciseSummary = "Exercise & physical job";
   extraWater = 16;
   } else {
-  alert("PLEASE SELECT YOUR EXERCISE LEVEL");
+  window.alert("PLEASE SELECT YOUR EXERCISE LEVEL");
+  event.preventDefault();
+  return;
   }
 
   let calories = Math.round(bmr * activityFactor);
@@ -352,7 +373,9 @@ function showResults (event) {
   yourGoal = "Maintain";
   goalCals = "0 extra kcals/day";
   } else {
-  alert("PLEASE SELECT YOUR EXERCISE GOAL");
+  window.alert("PLEASE SELECT YOUR EXERCISE GOAL");
+  event.preventDefault();
+  return;
 }
 
 let caloriesOut = calories + goal;
