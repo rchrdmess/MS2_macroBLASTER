@@ -187,7 +187,7 @@ article h4 {
 
 article p {
   color: navy;
-  font-size: 2.75vw;
+  font-size: 3vw;
   text-align: justify;
   width: 80%;
   margin-left: 10%;
@@ -202,14 +202,14 @@ time {
 
 article a {
   color: navy;
-  font-size: 2.75vw;
+  font-size: 3vw;
   text-decoration: underline;
   cursor: pointer;
 }
 
 article ul {
   color: navy;
-  font-size: 2.75vw;
+  font-size: 3vw;
   text-align: justify;
   margin-left: 12%;
   width: 80%;
@@ -217,7 +217,7 @@ article ul {
 
 article ol {
   color: navy;
-  font-size: 2.75vw;
+  font-size: 3vw;
   text-align: justify;
   margin-left: 12%;
   width: 80%;
@@ -245,12 +245,12 @@ summary {
 
 details p {
   color: navy;
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 
 details a {
   color: navy;
-  font-size: 2.5vw;
+  font-size: 3vw;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -388,7 +388,7 @@ input[type=submit]:hover {
 
 .base_left a,.base_right a {
   color: #ffffff;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: normal;
   text-decoration: none;
   padding-left: 25%;
