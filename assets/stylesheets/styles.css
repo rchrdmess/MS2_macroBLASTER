@@ -565,7 +565,8 @@ input[type=submit]:hover {
   width: 100%;
 }
 .base_left h3, .base_right h3 {
-  padding-left: 33%;
+  padding-left: 0%;
+  text-align: center;
 }
 .base_left a, .base_right a {
   padding-left: 38%;
