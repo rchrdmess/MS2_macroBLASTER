@@ -33,7 +33,9 @@
    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180x180.webp">
    <link href="assets/stylesheets/styles.css" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css?family=Do Hyeon%7CRighteous" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 </head>
 <body>
  <div class='header'>
@@ -91,8 +93,8 @@ In accessing the website, users acknowledge and agrees that:
 <a href="injury_rehab.htm" aria-label="A link to macroBLASTER's Recovering From Injury page">Injury Rehab</a>
   </div>
   <div class="base_middle">
-   <h2 onclick="topFunction()"><sub>macro</sub><span>BLASTER</span></h2>
-    <a id='gym' target='_blank' href="https://maps.app.goo.gl/JD5eQj3FK9HKtVSm7" aria-label="A link to macroBLASTER's Find A Gym page">Find A Gym</a>
+   <h2 id="toTop"><sub>macro</sub><span>BLASTER</span></h2>
+    <div id='openMapsButton' role="button">Find A Gym</div>
  <br>
  <br>
  <br>
@@ -123,6 +125,7 @@ In accessing the website, users acknowledge and agrees that:
   </div>
  </div>
 </div>
- <script src="assets/javascript/script_top.js"></script>
+ <script src="assets/javascript/location.js"></script>
+ <script src="assets/javascript/to_top.js"></script>
 </body>
 </html>

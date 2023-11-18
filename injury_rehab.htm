@@ -33,7 +33,9 @@
    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180x180.webp">
    <link href="assets/stylesheets/styles.css" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css?family=Do Hyeon%7CRighteous" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 </head>
 <body>
  <div class='header'>
@@ -57,7 +59,7 @@
    <p><b>12. Follow-Up Care:</b> Attend all follow-up appointments with your healthcare provider or therapist to monitor your progress and make any necessary adjustments to your treatment plan.</p>
    <p><b>13. Prevent Recurrence:</b> Once you've recovered, take steps to prevent a recurrence of the injury. This may involve strengthening exercises, improving flexibility, or modifying your activities.</p>
    <p><b>14. Listen to Your Body:</b> Pay attention to how your body feels throughout the recovery process. If you experience pain or discomfort, communicate it to your healthcare provider.</p>
-<p class='important'>NB. The specific steps for recovery can vary depending on the type and severity of the injury. Always consult with a <a href="https://maps.app.goo.gl/5QnPXGo7fhnFm9F37" target='_blank'>healthcare professional</a> for personalized guidance. Additionally, adhering to your treatment plan and maintaining a positive mindset can play a significant role in your successful recovery.</p>
+<p class='important'>NB. The specific steps for recovery can vary depending on the type and severity of the injury. Always consult with a <a href="https://www.csp.org.uk/public-patient/find-physiotherapist/physio2u" target='_blank'>healthcare professional</a> for personalized guidance. Additionally, adhering to your treatment plan and maintaining a positive mindset can play a significant role in your successful recovery.</p>
   </article>
  <div class="base" role="contentinfo">
  <div class="base_r-container">
@@ -74,8 +76,8 @@
 <a href="injury_rehab.htm" aria-label="A link to macroBLASTER's Recovering From Injury page">Injury Rehab</a>
   </div>
   <div class="base_middle">
-   <h2 onclick="topFunction()"><sub>macro</sub><span>BLASTER</span></h2>
-    <a id='gym' target='_blank' href="https://maps.app.goo.gl/JD5eQj3FK9HKtVSm7" aria-label="A link to macroBLASTER's Find A Gym page">Find A Gym</a>
+   <h2 id="toTop"><sub>macro</sub><span>BLASTER</span></h2>
+    <div id='openMapsButton' role="button">Find A Gym</div>
  <br>
  <br>
  <br>
@@ -106,6 +108,7 @@
   </div>
  </div>
 </div>
- <script src="assets/javascript/script_top.js"></script>
+ <script src="assets/javascript/location.js"></script>
+ <script src="assets/javascript/to_top.js"></script>
 </body>
 </html>

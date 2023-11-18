@@ -33,7 +33,9 @@
    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180x180.webp">
    <link href="assets/stylesheets/styles.css" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css?family=Do Hyeon%7CRighteous" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 </head>
 <body>
  <div class='header'>
@@ -44,22 +46,22 @@
     <h3>Press Releases</h3>
        <time datetime="2023-02-03 10:00">10:00, Monday 3 February 2023</time>
  <br>
-        <a href="assets/wireframe_index.webp" target="about_blank" aria-label="macroBLASTER RELEASE UNSEEN FOOTAGE OF BRAND NEW WEBSITE. File opens in new tab">macroBLASTER RELEASE UNSEEN FOOTAGE OF BRAND NEW WEBSITE</a>
+        <a href="assets/images/home_page_wireframe.png" target="about_blank" aria-label="macroBLASTER RELEASE UNSEEN FOOTAGE OF BRAND NEW WEBSITE. File opens in new tab">macroBLASTER RELEASE UNSEEN FOOTAGE OF BRAND NEW WEBSITE</a>
  <br>
  <br>
        <time datetime="2023-02-28 10:00">10:00, Wednesday 28 February 2023</time>
  <br>
-        <a href="assets/wireframe_modal.webp" target="about_blank" aria-label="macroBLASTER RELEASE SNEAK PEAK OF MODAL FEATURE. File opens in new tab">macroBLASTER RELEASE SNEAK PEAK OF MODAL FEATURE</a>
+        <a href="assets/images/results_page_wireframe.png" target="about_blank" aria-label="macroBLASTER RELEASE SNEAK PEAK OF MODAL FEATURE. File opens in new tab">macroBLASTER RELEASE SNEAK PEAK OF MODAL FEATURE</a>
  <br>
  <br>
        <time datetime="2023-04-09 10:00">10:00, Monday 9 April 2023</time>
  <br>
-        <a href="assets/wireframe_corporate.webp" target="about_blank" aria-label="macroBLASTER PLAN TO DISPLAY COMPANY INFO ON NEW WEBSITE. File opens in new tab">macroBLASTER PLAN TO DISPLAY COMPANY INFO ON NEW WEBSITE</a>
+        <a href="assets/images/footer_page_wireframe.png" target="about_blank" aria-label="macroBLASTER PLAN TO DISPLAY COMPANY INFO ON NEW WEBSITE. File opens in new tab">macroBLASTER PLAN TO DISPLAY COMPANY INFO ON NEW WEBSITE</a>
  <br>
  <br>
        <time datetime="2023-05-10 10:00">10:00, Wednesday 10 May 2023</time>
  <br>
-        <a href="assets/wireframe_index.webp" target="about_blank" aria-label="macroBLASTER TO ALLOW FOR QUESTIONS ON NEW WEBSITE. File opens in new tab">macroBLASTER TO ALLOW FOR QUESTIONS ON NEW WEBSITE</a>
+        <a href="assets/images/narrow_page_wireframe.png" target="about_blank" aria-label="macroBLASTER TO ALLOW FOR QUESTIONS ON NEW WEBSITE. File opens in new tab">macroBLASTER TO ALLOW FOR QUESTIONS ON NEW WEBSITE</a>
 </article>
  <div class="base" role="contentinfo">
  <div class="base_r-container">
@@ -76,8 +78,8 @@
 <a href="injury_rehab.htm" aria-label="A link to macroBLASTER's Recovering From Injury page">Injury Rehab</a>
   </div>
   <div class="base_middle">
-   <h2 onclick="topFunction()"><sub>macro</sub><span>BLASTER</span></h2>
-    <a id='gym' target='_blank' href="https://maps.app.goo.gl/JD5eQj3FK9HKtVSm7" aria-label="A link to macroBLASTER's Find A Gym page">Find A Gym</a>
+   <h2 id="toTop"><sub>macro</sub><span>BLASTER</span></h2>
+    <div id='openMapsButton' role="button">Find A Gym</div>
  <br>
  <br>
  <br>
@@ -108,6 +110,7 @@
   </div>
  </div>
 </div>
- <script src="assets/javascript/script_top.js"></script>
+ <script src="assets/javascript/location.js"></script>
+ <script src="assets/javascript/to_top.js"></script>
 </body>
 </html>
