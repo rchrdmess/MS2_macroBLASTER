@@ -99,7 +99,7 @@ a span {
 
 .activity_button {
   display: inline-block;
-  width: 14.77vw;
+  width: 14.15vw;
   border-radius: 0.625em;
   cursor: pointer;
   padding: 0.625em;
@@ -125,7 +125,7 @@ a span {
 
 .activity_button p {
   color: white;
-  font-size: 1.84vw;
+  font-size: 1.8vw;
   text-align: center;
   font-weight: bold;
   padding: 0;
@@ -576,14 +576,14 @@ input[type=submit]:hover {
   padding-left: 38%;
 }
 ::placeholder {
-  padding-left: 25%;
+  padding-left: 23%;
 }
 
 :-ms-input-placeholder {
-  padding-left: 25%;
+  padding-left: 23%;
 }
 
 ::-ms-input-placeholder {
-  padding-left: 25%;
+  padding-left: 23%;
 }
 }
