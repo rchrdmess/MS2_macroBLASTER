@@ -777,7 +777,7 @@ function calculateCalories () {<br>
   } else if (numericAge > 75 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
   calories = baseCals + 0;<br>
   } else if (numericAge > 75 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 200;  
+  calories = baseCals + 200;<br>
   } else if (numericAge > 75 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
   calories = baseCals + 400;<br>
   } else if (numericAge < 18 && female.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
@@ -838,51 +838,51 @@ function calculateCalories () {<br>
 
 ##### New Javascript
 
-  let bmrMale = 88.362 + (13.397 * numericWeight) + (4.799 * numericHeight) - (5.677 * numericAge);
-  let bmrFemale = 447.593 + (9.247 * numericWeight) + (3.098 * numericHeight) - (4.330 * numericAge);
-
-  if (male.style.backgroundColor === "green") {
-  bmr = bmrMale;
-  gender = "Male";
-  } else if (female.style.backgroundColor === "green") {
-  bmr = bmrFemale;
-  gender = "Female";
-  } else {
-  window.alert("PLEASE SELECT YOUR ASSIGNED GENDER");
-  event.preventDefault();
-  return;
-  }
-
-  if (none.style.backgroundColor === "green") {
-  activityFactor = 1.2;
-  exercise = "None";
-  exerciseSummary = "Little or no exercise";
-  extraWater = 0;
-  } else if (light.style.backgroundColor === "green") {
-  activityFactor = 1.375;
-  exercise = "Light";
-  exerciseSummary = "1-3 days/week";
-  extraWater = 4;
-  } else if (medium.style.backgroundColor === "green") {
-  activityFactor = 1.55;
-  exercise = "Medium";
-  exerciseSummary = "3-5 days/week";
-  extraWater = 8;
-  } else if (high.style.backgroundColor === "green") {
-  activityFactor = 1.725;
-  exercise = "High";
-  exerciseSummary = "6-7 days/week";
-  extraWater = 12;
-  } else if (extreme.style.backgroundColor === "green") {
-  activityFactor = 1.9;
-  exercise = "Extreme";
-  exerciseSummary = "Exercise & physical job";
-  extraWater = 16;
-  } else {
-  window.alert("PLEASE SELECT YOUR EXERCISE LEVEL");
-  event.preventDefault();
-  return;
-  }
+  let bmrMale = 88.362 + (13.397 * numericWeight) + (4.799 * numericHeight) - (5.677 * numericAge);<br>
+  let bmrFemale = 447.593 + (9.247 * numericWeight) + (3.098 * numericHeight) - (4.330 * numericAge);<br>
+<br><br>
+  if (male.style.backgroundColor === "green") {<br>
+  bmr = bmrMale;<br>
+  gender = "Male";<br>
+  } else if (female.style.backgroundColor === "green") {<br>
+  bmr = bmrFemale;<br>
+  gender = "Female";<br>
+  } else {<br>
+  window.alert("PLEASE SELECT YOUR ASSIGNED GENDER");<br>
+  event.preventDefault();<br>
+  return;<br>
+  }<br>
+<br><br>
+  if (none.style.backgroundColor === "green") {<br>
+  activityFactor = 1.2;<br>
+  exercise = "None";<br>
+  exerciseSummary = "Little or no exercise";<br>
+  extraWater = 0;<br>
+  } else if (light.style.backgroundColor === "green") {<br>
+  activityFactor = 1.375;<br>
+  exercise = "Light";<br>
+  exerciseSummary = "1-3 days/week";<br>
+  extraWater = 4;<br>
+  } else if (medium.style.backgroundColor === "green") {<br>
+  activityFactor = 1.55;<br>
+  exercise = "Medium";<br>
+  exerciseSummary = "3-5 days/week";<br>
+  extraWater = 8;<br>
+  } else if (high.style.backgroundColor === "green") {<br>
+  activityFactor = 1.725;<br>
+  exercise = "High";<br>
+  exerciseSummary = "6-7 days/week";<br>
+  extraWater = 12;<br>
+  } else if (extreme.style.backgroundColor === "green") {<br>
+  activityFactor = 1.9;<br>
+  exercise = "Extreme";<br>
+  exerciseSummary = "Exercise & physical job";<br>
+  extraWater = 16;<br>
+  } else {<br>
+  window.alert("PLEASE SELECT YOUR EXERCISE LEVEL");<br>
+  event.preventDefault();<br>
+  return;<br>
+  }<br>
 
 
 #### Old HTML
