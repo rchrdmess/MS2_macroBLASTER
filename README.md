@@ -2,7 +2,7 @@
 
 (Developer: Richard Messenger)
 
-![Main image](docs/main_img.jpeg)
+![Main image](docs/main_header_img.jpeg)
 
 [Live webpage](https://rchrdmess.github.io/MS2_macroBLASTER/index.htm)
 
@@ -277,14 +277,14 @@ The website consists of eleven distinct pages:
   - It has built in failsafes to prevent the user from submitting the form incorrectly.
   - User stories covered: 
 
-[Gender Selection](docs/gender_selection.jpeg)  
+![Gender Selection](docs/gender_selection.jpeg)  
 
 - Gender Selection
   - Uses javascript (getElementById, eventListeners, and if/else statments) to change the button colours when clicked.
   - An alert is triggered if neither are selected when submit is clicked.
   - User stories covered: 
 
-[Goal Selection](docs/goal_selection.jpeg)  
+![Goal Selection](docs/goal_selection.jpeg)  
 
 - Goal Selection
   - Uses javascript (getElementById, eventListeners, and if/else statments) to change the button colours when clicked.
@@ -292,14 +292,14 @@ The website consists of eleven distinct pages:
   - An additional alert is placed on the 'Bulk' button to advise the user that a resistance training routine s recommended with this option.
   - User stories covered: 
 
-[Personal Statistics Input](docs/personal_statistics_input.jpeg)  
+![Personal Statistics Input](docs/personal_statistics_input.jpeg)  
 
 - Personal Statistics Input
   - Uses javascript (getElementById and a for loop appending child for various values) to populate the datalist options.
   - An alert is triggered if none are selected when submit is clicked.
   - User stories covered: 
 
-[Activity Level Selection](docs/activity_level_selection.jpeg)  
+![Activity Level Selection](docs/activity_level_selection.jpeg)  
 
 - Activity Level Selection
   - Uses javascript (getElementById, eventListeners, and if/else statments) to change the button colours when clicked.
@@ -307,14 +307,14 @@ The website consists of eleven distinct pages:
   - A slight colour gradient is used to help the user identify a scale of options.
   - User stories covered: 
 
-[Submit Button](docs/submit_button.jpeg)  
+![Submit Button](docs/submit_button.jpeg)  
 
 - Submit Button
   - Uses javascript (getElementById, eventListeners, and if/else statments) to execute the required function.
   - An alert is triggered if any of the options are not selected when submit is clicked.
   - User stories covered: 
 
-[Footer Section](docs/footer_section.jpeg) 
+![Footer Section](docs/footer_section.jpeg) 
 
 - Footer Section
   - The footer contains macroBLASTER's logo and links to fitness section, corporate pages and social media.
@@ -339,7 +339,7 @@ The website consists of eleven distinct pages:
     - Privacy Statement
   - User stories covered: 
 
-[404 Page](docs/404_page.jpeg) 
+![404 Page](docs/404_page.jpeg) 
 
 - 404:
   - Contains a link to return the user to the home page if an incorrect address is entered.
