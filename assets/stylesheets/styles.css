@@ -50,6 +50,16 @@ a span {
 
 /* --- MAIN SECTION (GREEN BOX) SETTINGS ---- */
 
+#shareButton {
+  text-align: right;
+}
+
+i {
+  font-size: 4vw;
+  color: navy;
+  cursor: pointer;
+}
+
 .main {
   background-color: #CBF83E;
   width: 90%;
