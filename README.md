@@ -390,7 +390,11 @@ When viewed on smaller screens, the sub-sections of the footer stack vertically 
 
 The website was navigated using Apple's Voice Over and aria labels were added to provide a coherent narrative to visually impaired users.
 
-On deploying to GitHub, some alignment issues were noted when viewed on a phone for the first time and adjusted acordingly using Google Chrome's inspect feature. (See 'Bugs' below)
+On deploying to GitHub, some alignment issues with the activity buttons were noted when viewed on a phone for the first time and adjusted acordingly using Google Chrome's inspect feature. (See 'Bugs' below).
+
+Automated testing was used throughout the build of the macro calculator's main functionality. To do this, each input stage (gender, goal, personal statistics, activity level) was isolated, created and tested before moving onto the next input.
+
+Manual testing was used afterwards to check the inputs returned the correct outputs and that all the HTML links were accurate.
 
 ### HTML Validation
 
@@ -705,7 +709,7 @@ Due to the complexity, a new approach was sort and, through research, the Harris
 
 ![Harris-Benedict](docs/harris_benedict.jpeg) 
 
-As a result, initial plans to only use three activity level options was increased to five to align with the five activity factors used with the Harris-Benedict equation. (See 'Old/New HTML (below)).
+As a result, initial plans to only use three activity level options was increased to five to align with the five activity factors used with the Harris-Benedict equation. (See 'Old/New HTML/CSS (below)). The styling of these new buttons needed to be amended in the stylesheet to allow space for the two extra activity buttons that were now required.
 
 
 #### Old Javascript
@@ -942,6 +946,54 @@ function calculateCalories () {
      <p>Exercise & active job</p>
     </div>
 `
+#### Old CSS
+
+.button {
+  display: inline-block;
+  width: 22vw;
+  border-radius: 0.625em;
+  cursor: pointer;
+  padding: 0.625em;
+  text-align: center;
+}
+
+.button p {
+  color: #ffffff;
+  font-size: 3vw;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+}
+
+.spacer {
+  display: inline-block;
+  width: 2vw;
+}
+
+#### New CSS
+
+.activity_button {
+  display: inline-block;
+  width: 13.05vw;
+  border-radius: 0.625em;
+  cursor: pointer;
+  padding: 0.625em;
+  text-align: center;
+}
+
+.activity_button p {
+  color: white;
+  font-size: 1.33vw;
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+}
+
+.activity_spacer {
+  display: inline-block;
+  width: 0.25vw;
+}
+
 #### Results
 
 ![Final Calculator](docs/macro_calculator.jpeg) 
