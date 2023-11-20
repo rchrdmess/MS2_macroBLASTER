@@ -276,7 +276,7 @@ The website consists of eleven distinct pages:
   - It is designed with consideration to accessibility, regarding its font sizes and colour scheme.
   - It uses the vw unit to maintain its shape across all devices.
   - It has built in failsafes to prevent the user from submitting the form incorrectly.
-  - User stories covered:
+  - User stories covered: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
 
 - Gender Selection
 
@@ -284,7 +284,6 @@ The website consists of eleven distinct pages:
 
   - Uses javascript (getElementById, eventListeners, and if/else statments) to change the button colours when clicked.
   - An alert is triggered if neither are selected when submit is clicked.
-  - User stories covered:
 
 - Goal Selection
 
@@ -293,7 +292,6 @@ The website consists of eleven distinct pages:
   - Uses javascript (getElementById, eventListeners, and if/else statments) to change the button colours when clicked.
   - An alert is triggered if none are selected when submit is clicked.
   - An additional alert is placed on the 'Bulk' button to advise the user that a resistance training routine s recommended with this option.
-  - User stories covered:
 
 - Personal Statistics Input
 
@@ -301,7 +299,6 @@ The website consists of eleven distinct pages:
 
   - Uses javascript (getElementById and a for loop appending child for various values) to populate the datalist options.
   - An alert is triggered if none are selected when submit is clicked.
-  - User stories covered: 
 
 - Activity Level Selection
 
@@ -310,7 +307,6 @@ The website consists of eleven distinct pages:
   - Uses javascript (getElementById, eventListeners, and if/else statments) to change the button colours when clicked.
   - An alert is triggered if none are selected when submit is clicked.
   - A slight colour gradient is used to help the user identify a scale of options.
-  - User stories covered: 
 
 - Submit Button
 
@@ -318,7 +314,6 @@ The website consists of eleven distinct pages:
 
   - Uses javascript (getElementById, eventListeners, and if/else statments) to execute the required function.
   - An alert is triggered if any of the options are not selected when submit is clicked.
-  - User stories covered: 
 
 - Footer Section
 
@@ -344,14 +339,40 @@ The website consists of eleven distinct pages:
     - Press Releases
     - User Agreement
     - Privacy Statement
-  - User stories covered: 
 
 - 404 Page:
 
 ![404 Page](docs/404_page.jpeg) 
 
   - Contains a link to return the user to the home page if an incorrect address is entered.
-  - User stories covered: 
+
+- What Are Macros Page:
+
+![What Are Macros Page](docs/what_are_macros_page.jpeg) 
+
+  - user stories: 2, 4, 7, 8, 9, 10, 11, 12, 13
+
+- Warming Up Page:
+
+![Warming Up Page](docs/warming_up_page.jpeg) 
+
+  - user stories: 2, 4, 7, 8, 9, 10, 11, 12, 13
+
+- Aerobics Page:
+
+![Aerobics Page](docs/aerobics_page.jpeg) 
+
+- Resistance Training Page
+
+![Resistance Training Page](resistance_training_page.jpeg) 
+
+  - user stories: 2, 4, 7, 8, 9, 10, 11, 12, 13
+
+- Injury Rehab Page
+
+![Injury Rehab Page](injury_rehab_page.jpeg) 
+
+  - user stories: 2, 4, 7, 8, 9, 10, 11, 12, 13
 
 ### Future Features To Implement
 
@@ -503,6 +524,11 @@ The website was tested using Google Chrome Developer Tools for a selection of po
 The website was tested on the following browsers:
 - Apple Safari
 - Google Chrome
+
+  - The main features work as intended across both browsers.
+  - Additional functions such as the 'Find a gym' link in the footer and the 'share' button, becasue they use javascript instead of a simple html link, will depend on the user's browser settings to work.
+ 
+![Share Function in Safari](docs/share_function.jpeg)  
 
 ### Testing user stories
 
