@@ -268,55 +268,62 @@ The website consists of eleven distinct pages:
   
 ## Features
 
+- Macro Calculator
+
 ![macroBLASTER's Calculator](docs/macro_calculator.jpeg)
 
-- Macro Calculator
   - The main feature of the home page, the macro calculator, contains buttons and input fields to assist the user in calculating the appropriate level of macros for their daily consumption.
   - It is designed with consideration to accessibility, regarding its font sizes and colour scheme.
   - It uses the vw unit to maintain its shape across all devices.
   - It has built in failsafes to prevent the user from submitting the form incorrectly.
-  - User stories covered: 
+  - User stories covered:
+
+- Gender Selection
 
 ![Gender Selection](docs/gender_selection.jpeg)  
 
-- Gender Selection
   - Uses javascript (getElementById, eventListeners, and if/else statments) to change the button colours when clicked.
   - An alert is triggered if neither are selected when submit is clicked.
-  - User stories covered: 
+  - User stories covered:
+
+- Goal Selection
 
 ![Goal Selection](docs/goal_selection.jpeg)  
 
-- Goal Selection
   - Uses javascript (getElementById, eventListeners, and if/else statments) to change the button colours when clicked.
   - An alert is triggered if none are selected when submit is clicked.
   - An additional alert is placed on the 'Bulk' button to advise the user that a resistance training routine s recommended with this option.
-  - User stories covered: 
+  - User stories covered:
+
+- Personal Statistics Input
 
 ![Personal Statistics Input](docs/personal_statistics_input.jpeg)  
 
-- Personal Statistics Input
   - Uses javascript (getElementById and a for loop appending child for various values) to populate the datalist options.
   - An alert is triggered if none are selected when submit is clicked.
   - User stories covered: 
 
+- Activity Level Selection
+
 ![Activity Level Selection](docs/activity_level_selection.jpeg)  
 
-- Activity Level Selection
   - Uses javascript (getElementById, eventListeners, and if/else statments) to change the button colours when clicked.
   - An alert is triggered if none are selected when submit is clicked.
   - A slight colour gradient is used to help the user identify a scale of options.
   - User stories covered: 
 
+- Submit Button
+
 ![Submit Button](docs/submit_button.jpeg)  
 
-- Submit Button
   - Uses javascript (getElementById, eventListeners, and if/else statments) to execute the required function.
   - An alert is triggered if any of the options are not selected when submit is clicked.
   - User stories covered: 
 
+- Footer Section
+
 ![Footer Section](docs/footer_section.jpeg) 
 
-- Footer Section
   - The footer contains macroBLASTER's logo and links to fitness section, corporate pages and social media.
   - Social media pages open in a new window.
   - 'Find a gym' link, positioned centrally for emphasis, uses javascript (getElementById, eventListener and if/else statement) to get users location and open a gym search in Google Maps in a new window.
@@ -339,9 +346,10 @@ The website consists of eleven distinct pages:
     - Privacy Statement
   - User stories covered: 
 
+- 404 Page:
+
 ![404 Page](docs/404_page.jpeg) 
 
-- 404:
   - Contains a link to return the user to the home page if an incorrect address is entered.
   - User stories covered: 
 
@@ -665,11 +673,11 @@ The website was tested on the following browsers:
 
 Initial attempts to incorporate the affect of age on the number of calories required each day involved the use of a data table provided by Colorado State University and a complicated set of if/else statements. (See 'Old Javascript' (below).)
 
-[Calorie Table](docs/calorie_table.jpeg)  
+![Calorie Table](docs/calorie_table.jpeg)  
 
 Due to the complexity, a new approach was sort and, through research, the Harris-Benedict equation was found. (See 'New Javascript' (below).)
 
-[Harris-Benedict](docs/harris_benedict.jpeg) 
+![Harris-Benedict](docs/harris_benedict.jpeg) 
 
 As a result, initial plans to only use three activity level options was increased to five to align with the five activity factors used with the Harris-Benedict equation. (See 'Old/New HTML (below)).
 
@@ -850,6 +858,7 @@ function calculateCalories () {
 
 #### Old HTML
 
+`
 <p>WHAT IS YOUR EXERCISE LEVEL ...</p>
     <div role="button" class='activity_button' id='none' style='background-color: #F6BDC0;'>
      <p>NONE</p>
@@ -870,8 +879,9 @@ function calculateCalories () {
      <p>Exercise 3-5 days/week</p>
     </div>
 
+`
 #### New HTML
-
+`
    <p>WHAT IS YOUR EXERCISE LEVEL ...</p>
     <div role="button" class='activity_button' id='none' style='background-color: #8b0001;'>
      <p>NONE</p>
@@ -905,10 +915,10 @@ function calculateCalories () {
      <p>EXTREME</p>
      <p>Exercise & active job</p>
     </div>
-
+`
 #### Results
 
-[Final Calculator](docs/macro_calculator.jpeg) 
+![Final Calculator](docs/macro_calculator.jpeg) 
   
 [Back to Contents](#Contents)  
   
