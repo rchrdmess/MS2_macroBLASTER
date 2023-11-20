@@ -157,32 +157,32 @@ The scheme chosen was 'bold and bright' as it was felt a strong contrast in colo
 
 #### Text Ratios
 
-Logo:Background - 14.9 
-Background:Main 12.98 
-Background:text - 16 
-Placeholder:Placeholder text - 16 
-Main:Male Button - 14.24 
-Main:Female Button - 8.07 
-Main:Bulk Button - 10.37 
-Main:Cut Button - 7.22 
-Main:Maintain Button - 8.8 
-Main:None Button - 8.11 
-Main:Light Button - 9.24 
-Main:Medium Button - 9.39 
-Main:High Button - 10.55 
-Main:Extreme Button - 12.03 
-Main:Submit Button - 7.1 
-Text:Male Button - 17.56 
-Text:Female Button - 9.95 
-Text:Bulk Button - 12.78 
-Text:Cut Button - 8.9 
-Text:Maintain Button - 10.85 
-Text:None Button - 10 
-Text:Light Button - 11.39 
-Text:Medium Button - 11.58 
-Text:High Button - 13.01 
-Text:Extreme Button - 14.83 
-Text:Submit Button - 8.75 
+- Logo:Background - 14.9 
+- Background:Main 12.98 
+- Background:text - 16 
+- Placeholder:Placeholder text - 16 
+- Main:Male Button - 14.24 
+- Main:Female Button - 8.07 
+- Main:Bulk Button - 10.37 
+- Main:Cut Button - 7.22 
+- Main:Maintain Button - 8.8 
+- Main:None Button - 8.11 
+- Main:Light Button - 9.24 
+- Main:Medium Button - 9.39 
+- Main:High Button - 10.55 
+- Main:Extreme Button - 12.03 
+- Main:Submit Button - 7.1 
+- Text:Male Button - 17.56 
+- Text:Female Button - 9.95 
+- Text:Bulk Button - 12.78 
+- Text:Cut Button - 8.9 
+- Text:Maintain Button - 10.85 
+- Text:None Button - 10 
+- Text:Light Button - 11.39 
+- Text:Medium Button - 11.58 
+- Text:High Button - 13.01 
+- Text:Extreme Button - 14.83 
+- Text:Submit Button - 8.75 
 
 
 ### Fonts
@@ -714,128 +714,127 @@ As a result, initial plans to only use three activity level options was increase
 
 #### Old Javascript
 
-function calculateCalories () {
-  if (numericAge < 18 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
-  } else if (numericAge < 18 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 800;
-  } else if (numericAge < 18 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 1200;
-  } else if (numericAge < 20 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 600;
-  } else if (numericAge < 20 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 800;
+function calculateCalories () {<br>
+  if (numericAge < 18 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {<br>
+  calories = baseCals + 400;<br>
+  } else if (numericAge < 18 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {<br>
+  calories = baseCals + 800;<br>  } else if (numericAge < 18 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {<br>
+  calories = baseCals + 1200;<br>
+  } else if (numericAge < 20 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {<br>
+  calories = baseCals + 600;<br>
+  } else if (numericAge < 20 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {<br>
+  calories = baseCals + 800;<br>
   } else if (numericAge < 20 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 1000;
+  calories = baseCals + 1000;<br>
   } else if (numericAge < 25 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 25 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 800;
+  calories = baseCals + 800;<br>
   } else if (numericAge < 25 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 1000;
+  calories = baseCals + 1000;<br>
   } else if (numericAge < 35 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 35 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 600;
+  calories = baseCals + 600;<br>
   } else if (numericAge < 35 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 1000;
+  calories = baseCals + 1000;<br>
   } else if (numericAge < 40 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 40 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 600;
+  calories = baseCals + 600;<br>
   } else if (numericAge < 40 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 800;
+  calories = baseCals + 800;<br>
   } else if (numericAge < 45 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 200;
+  calories = baseCals + 200;<br>
   } else if (numericAge < 45 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 600;
+  calories = baseCals + 600;<br>
   } else if (numericAge < 45 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 800;
+  calories = baseCals + 800;<br>
   } else if (numericAge < 55 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 200;
+  calories = baseCals + 200;<br>
   } else if (numericAge < 55 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 55 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 800;
+  calories = baseCals + 800;<br>
   } else if (numericAge < 60 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 200;
+  calories = baseCals + 200;<br>
   } else if (numericAge < 60 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 60 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 600;
+  calories = baseCals + 600;<br>
   } else if (numericAge < 65 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 0;
+  calories = baseCals + 0;<br>
   } else if (numericAge < 65 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 65 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 600;
+  calories = baseCals + 600;<br>
   } else if (numericAge < 74 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 0;
+  calories = baseCals + 0;<br>
   } else if (numericAge < 74 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 200;
+  calories = baseCals + 200;<br>
   } else if (numericAge < 74 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 600;
+  calories = baseCals + 600;<br>
   } else if (numericAge > 75 && male.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 0;
+  calories = baseCals + 0;<br>
   } else if (numericAge > 75 && male.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 200;
+  calories = baseCals + 200;  
   } else if (numericAge > 75 && male.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 18 && female.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals - 200;
+  calories = baseCals - 200;<br>
   } else if (numericAge < 18 && female.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 0;
+  calories = baseCals + 0;<br>
   } else if (numericAge < 18 && female.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 20 && female.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 0;
+  calories = baseCals + 0;<br>
   } else if (numericAge < 20 && female.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 200;
+  calories = baseCals + 200;<br>
   } else if (numericAge < 20 && female.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 25 && female.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals + 0;
+  calories = baseCals + 0;<br>
   } else if (numericAge < 25 && female.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 200;
+  calories = baseCals + 200;<br>
   } else if (numericAge < 25 && female.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 30 && female.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals - 200;
+  calories = baseCals - 200;<br>
   } else if (numericAge < 30 && female.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 0;
+  calories = baseCals + 0;<br>
   } else if (numericAge < 30 && female.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 400;
+  calories = baseCals + 400;<br>
   } else if (numericAge < 50 && female.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals - 200;
+  calories = baseCals - 200;<br>
   } else if (numericAge < 50 && female.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals + 0;
+  calories = baseCals + 0;<br>
   } else if (numericAge < 50 && female.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 200;
+  calories = baseCals + 200;<br>
   } else if (numericAge < 60 && female.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals - 400;
+  calories = baseCals - 400;<br>
   } else if (numericAge < 60 && female.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals - 200;
+  calories = baseCals - 200;<br>
   } else if (numericAge < 60 && female.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 200;
+  calories = baseCals + 200;<br>
   } else if (numericAge > 61 && female.style.backgroundColor === 'green' && none.style.backgroundColor === 'green') {
-  calories = baseCals - 400;
+  calories = baseCals - 400;<br>
   } else if (numericAge > 61 && female.style.backgroundColor === 'green' && some.style.backgroundColor === 'green') {
-  calories = baseCals - 200;
+  calories = baseCals - 200;<br>
   } else if (numericAge > 61 && female.style.backgroundColor === 'green' && very.style.backgroundColor === 'green') {
-  calories = baseCals + 0;
-  } else {
-  alert("Please select all options.");
-  }
-    if (bulk.style.backgroundColor === 'green') {
-    + 500;
-    } else if (cut.style.backgroundColor === 'green') {
-    - 500;
-    } else if (maintain.style.backgroundColor === 'green') {
-    - 0;
-    } else {
-    alert("Please select all options.");
-    }
-}
+  calories = baseCals + 0;<br>
+  } else {<br>
+  alert("Please select all options.");<br>
+  }<br>
+    if (bulk.style.backgroundColor === 'green') {<br>
+    + 500;<br>
+    } else if (cut.style.backgroundColor === 'green') {<br>
+    - 500;<br>
+    } else if (maintain.style.backgroundColor === 'green') {<br>
+    - 0;<br>
+    } else {<br>
+    alert("Please select all options.");<br>
+    }<br>
+}<br>
 
 ##### New Javascript
 
