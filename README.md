@@ -157,32 +157,32 @@ The scheme chosen was 'bold and bright' as it was felt a strong contrast in colo
 
 #### Text Ratios
 
-Logo:Background - 14.9
-Background:Main 12.98
-Background:text - 16
-Placeholder:Placeholder text - 16
-Main:Male Button - 14.24
-Main:Female Button - 8.07
-Main:Bulk Button - 10.37
-Main:Cut Button - 7.22
-Main:Maintain Button - 8.8
-Main:None Button - 8.11
-Main:Light Button - 9.24
-Main:Medium Button - 9.39
-Main:High Button - 10.55
-Main:Extreme Button - 12.03
-Main:Submit Button - 7.1
-Text:Male Button - 17.56
-Text:Female Button - 9.95
-Text:Bulk Button - 12.78
-Text:Cut Button - 8.9
-Text:Maintain Button - 10.85
-Text:None Button - 10
-Text:Light Button - 11.39
-Text:Medium Button - 11.58
-Text:High Button - 13.01
-Text:Extreme Button - 14.83
-Text:Submit Button - 8.75
+Logo:Background - 14.9 
+Background:Main 12.98 
+Background:text - 16 
+Placeholder:Placeholder text - 16 
+Main:Male Button - 14.24 
+Main:Female Button - 8.07 
+Main:Bulk Button - 10.37 
+Main:Cut Button - 7.22 
+Main:Maintain Button - 8.8 
+Main:None Button - 8.11 
+Main:Light Button - 9.24 
+Main:Medium Button - 9.39 
+Main:High Button - 10.55 
+Main:Extreme Button - 12.03 
+Main:Submit Button - 7.1 
+Text:Male Button - 17.56 
+Text:Female Button - 9.95 
+Text:Bulk Button - 12.78 
+Text:Cut Button - 8.9 
+Text:Maintain Button - 10.85 
+Text:None Button - 10 
+Text:Light Button - 11.39 
+Text:Medium Button - 11.58 
+Text:High Button - 13.01 
+Text:Extreme Button - 14.83 
+Text:Submit Button - 8.75 
 
 
 ### Fonts
