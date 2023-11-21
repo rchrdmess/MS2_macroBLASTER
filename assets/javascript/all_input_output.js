@@ -4,11 +4,17 @@
 
 let gender;
 
+// Here, the male button is defined and an event listener added for when the element is clicked
+
 let male = document.getElementById("male");
 male.addEventListener("click", changeMaleBg);
 
+// Here, the female button is defined and an event listener added for when the element is clicked
+
 let female = document.getElementById("female");
 female.addEventListener("click", changeFemaleBg);
+
+// This function controls the behaviour of the male button when clicked
 
 function changeMaleBg(event) {
   if (female.style.backgroundColor === "green") {
@@ -18,6 +24,8 @@ function changeMaleBg(event) {
   this.style.backgroundColor = "green";
   }
 }
+
+// This function controls the behaviour of the female button when clicked
 
 function changeFemaleBg(event) {
   if (male.style.backgroundColor === "green") {
@@ -32,14 +40,22 @@ function changeFemaleBg(event) {
 
 let goal;
 
+// Here, the bulk button is defined and an event listener added for when the element is clicked
+
 let bulk = document.getElementById("bulk");
 bulk.addEventListener("click", changeBulkBg);
+
+// Here, the cut button is defined and an event listener added for when the element is clicked
 
 let cut = document.getElementById("cut");
 cut.addEventListener("click", changeCutBg);
 
+// Here, the maintain button is defined and an event listener added for when the element is clicked
+
 let maintain = document.getElementById("maintain");
 maintain.addEventListener("click", changeMaintainBg);
+
+// This function controls the behaviour of the bulk button when clicked
 
 function changeBulkBg(event) {
   window.alert("A resistance training routine is recommended when choosing this option.");
@@ -53,6 +69,8 @@ function changeBulkBg(event) {
   }
 }
 
+// This function controls the behaviour of the cut button when clicked
+
 function changeCutBg(event) {
   if (bulk.style.backgroundColor === "green"
  || maintain.style.backgroundColor === "green") {
@@ -63,6 +81,8 @@ function changeCutBg(event) {
   cut.style.backgroundColor = "green";
   }
 }
+
+// This function controls the behaviour of the maintain button when clicked
 
 function changeMaintainBg(event) {
   if (bulk.style.backgroundColor === "green"
@@ -75,12 +95,16 @@ function changeMaintainBg(event) {
   }
 }
 
-// Functions to populate the age datalist with age options
+// Function to populate the age datalist with age options
 
 function populateAgeList() {
-
+  
+// Here, ageDataList is defined
+  
   let ageDataList = document.getElementById("ageList");
-
+  
+// A for loop is used to create the age options, finite numbers between 16 and 85, and appended as children to the datalist element
+  
     for (let age = 16; age <= 85; age +=1) {
       let optionElement = document.createElement("option");
       optionElement.value = age;
@@ -88,14 +112,20 @@ function populateAgeList() {
     }
 }
 
+// The function is called
+
 populateAgeList();
 
-// Functions to populate the height datalist with height options
+// Function to populate the height datalist with height options
 
 function populateHeightList() {
 
+// Here, heightDataList is defined
+
   let heightDataList = document.getElementById("heightList");
 
+  // A for loop is used to create the height options, finite numbers between 120 and 225, and appended as children to the datalist element
+  
     for (let height = 120; height <= 225; height +=1) {
       let optionElement = document.createElement("option");
       optionElement.value = height;
@@ -103,13 +133,19 @@ function populateHeightList() {
     }
 }
 
+// The function is called
+
 populateHeightList();
 
 // Functions to populate the weight datalist with weight options
 
 function populateWeightList() {
 
+  // Here, weightDataList is defined
+
   let weightDataList = document.getElementById("weightList");
+
+    // A for loop is used to create the weight options, which are appended as children to the datalist element. As this range increases by 0.5, the toFixed method is used to display the whole numbers to 1 decimal place
 
     for (let weight = 38.0; weight <= 190.0; weight += 0.5) {
       let optionElement = document.createElement("option");
@@ -118,6 +154,8 @@ function populateWeightList() {
       weightDataList.appendChild(optionElement);
     }
 }
+
+// The function is called
 
 populateWeightList();
 
