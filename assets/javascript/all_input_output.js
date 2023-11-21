@@ -1,5 +1,7 @@
 /*global document*/
 
+// ALL COMMENTS ARE FOR THE FUNCTIONS BELOW THEM
+
 // Functions to change the gender button backgrounds when clicked
 
 let gender;
@@ -161,20 +163,32 @@ populateWeightList();
 
 // Functions to change the activity level button backgrounds when clicked
 
+// The none button is defined and an event listener added for when the element is clicked
+
 let none = document.getElementById("none");
 none.addEventListener("click", changeNoneBg);
+
+// The light button is defined and an event listener added for when the element is clicked
 
 let light = document.getElementById("light");
 light.addEventListener("click", changeLightBg);
 
+// The medium button is defined and an event listener added for when the element is clicked
+
 let medium = document.getElementById("medium");
 medium.addEventListener("click", changeMediumBg);
+
+// The high button is defined and an event listener added for when the element is clicked
 
 let high = document.getElementById("high");
 high.addEventListener("click", changeHighBg);
 
+// The extreme button is defined and an event listener added for when the element is clicked
+
 let extreme = document.getElementById("extreme");
 extreme.addEventListener("click", changeExtremeBg);
+
+// Function to control the behaviour of the none button when clicked
 
 function changeNoneBg(event) {
   if (light.style.backgroundColor === "green"
@@ -191,6 +205,8 @@ function changeNoneBg(event) {
   }
 }
 
+// Function to control the behaviour of the light button when clicked
+
 function changeLightBg(event) {
   if (none.style.backgroundColor === "green"
  || medium.style.backgroundColor === "green"
@@ -205,6 +221,8 @@ function changeLightBg(event) {
   this.style.backgroundColor = "green";
   }
 }
+
+// Function to control the behaviour of the medium button when clicked
 
 function changeMediumBg(event) {
   if (none.style.backgroundColor === "green"
@@ -221,6 +239,8 @@ function changeMediumBg(event) {
   }
 }
 
+// Function to control the behaviour of the high button when clicked
+
 function changeHighBg(event) {
   if (none.style.backgroundColor === "green"
  || light.style.backgroundColor === "green"
@@ -235,6 +255,8 @@ function changeHighBg(event) {
   this.style.backgroundColor = "green";
   }
 }
+
+// Function to control the behaviour of the extreme button when clicked
 
 function changeExtremeBg(event) {
   if (none.style.backgroundColor === "green"
@@ -253,9 +275,13 @@ function changeExtremeBg(event) {
 
 // Functions to handle the datalist inputs
 
+// convertToNumber function used to convert variables to numbers so they can be used in calculations
+
 function convertToNumber(value) {
   return +value;
 }
+
+// The weight input datalist is defined and an event listener added for when the option is selected
 
 let weightsInput = document.getElementById("weights");
 weightsInput.addEventListener("input", handleWeightSelection);
@@ -263,11 +289,15 @@ weightsInput.addEventListener("input", handleWeightSelection);
 let weightSelection;
 let numericWeight;
 
+// Function to retrieve the selected value input and convert it to a number
+
 function handleWeightSelection () {
   let selectedWeight = weightsInput.value;
   let weightSelection = selectedWeight;
   numericWeight = convertToNumber(selectedWeight);
 }
+
+// The height input datalist is defined and an event listener added for when the option is selected
 
 let heightsInput = document.getElementById("heights");
 heightsInput.addEventListener("input", handleHeightSelection);
@@ -275,11 +305,15 @@ heightsInput.addEventListener("input", handleHeightSelection);
 let heightSelection;
 let numericHeight;
 
+// Function to retrieve the selected value input and convert it to a number
+
 function handleHeightSelection () {
   let selectedHeight = heightsInput.value;
   let heightSelection = selectedHeight;
   numericHeight = convertToNumber(selectedHeight);
 }
+
+// The age input datalist is defined and an event listener added for when the option is selected
 
 let agesInput = document.getElementById("ages");
 agesInput.addEventListener("input", handleAgeSelection);
@@ -287,13 +321,15 @@ agesInput.addEventListener("input", handleAgeSelection);
 let ageSelection;
 let numericAge;
 
+// Function to retrieve the selected value input and convert it to a number
+
 function handleAgeSelection () {
   let selectedAge = agesInput.value;
   let ageSelection = selectedAge;
   numericAge = convertToNumber(selectedAge);
 }
 
-// Functions to calculate the output results. (event.preventDefault() solution provided by chatgpt, after much discussion, to prevent form submitting until all inputs selected. Chatgpt also advised to place window. before each alert function to stop JSLint thinking alert was a variable.)
+// Functions to calculate the output results. (event.preventDefault() solution provided by chatgpt, after much discussion, to prevent form submitting until all inputs selected. Chatgpt also advised to place 'window.' before each alert function to stop JSLint thinking alert was a variable.)
 
 let activityFactor;
 let exercise;
@@ -304,33 +340,49 @@ let encourage;
 let yourGoal;
 let goalCals;
 
+// The submit button is defined and an event listener added to display the results when the element is clicked
+
 let submit = document.getElementById("submit");
+
+// The results element is defined so the program knows where to place the output results
+
 let results = document.getElementById("results");
 submit.addEventListener("click", showResults);
 
 function showResults (event) {
 
+// If statement prevents the results being returned if no age value is selected on the form
+  
 if (!numericAge) {
   window.alert("PLEASE ENTER YOUR AGE");
   event.preventDefault();
   return;
 }
 
+// If statement prevents the results being returned if no height value is selected on the form
+  
 if (!numericHeight) {
   window.alert("PLEASE ENTER YOUR HEIGHT");
   event.preventDefault();
   return;
 }
 
+// If statement prevents the results being returned if no age weight is selected on the form
+  
 if (!numericWeight) {
   window.alert("PLEASE ENTER YOUR WEIGHT");
   event.preventDefault();
   return;
 }
 
+// bmr is defined and a formula provided depending on whether the user is male or female
+  
+  let bmr;
   let bmrMale = 88.362 + (13.397 * numericWeight) + (4.799 * numericHeight) - (5.677 * numericAge);
   let bmrFemale = 447.593 + (9.247 * numericWeight) + (3.098 * numericHeight) - (4.330 * numericAge);
 
+// If else statements used to setup the results page by assigning values to the gender input selections
+  
   if (male.style.backgroundColor === "green") {
   bmr = bmrMale;
   gender = "Male";
@@ -343,6 +395,8 @@ if (!numericWeight) {
   return;
   }
 
+// If else statements used to setup the results page by assigning values to the activity level input selections
+  
   if (none.style.backgroundColor === "green") {
   activityFactor = 1.2;
   exercise = "None";
@@ -374,10 +428,16 @@ if (!numericWeight) {
   return;
   }
 
+// Used to define the calories output as a whole number
+  
   let calories = Math.round(bmr * activityFactor);
+
+// bmi is calculated from the height and weight inputs
 
   let bmi = numericWeight / ((numericHeight/100)**2);
 
+// If else statements used to determine the resulting output based on the bmi value calculated
+  
   if (bmi < 18) {
   weightClass = "underweight.<br><br>Select 'Bulk' and aim for a BMI score of 18.5";
   encourage = "Oh dear!";
@@ -398,6 +458,8 @@ if (!numericWeight) {
   encourage = "Oh dear!";
   }
 
+// If else statment used to adjust the recommended daily calories for the selected fitness goal, and set the corresponding outputs
+  
   if (bulk.style.backgroundColor === "green") {
   goal = +500;
   yourGoal = "Bulk";
@@ -417,12 +479,32 @@ if (!numericWeight) {
 }
 
 let caloriesOut = calories + goal;
+
+// Used to fix the bmi value to one decimal place
+  
 let bmiOut = bmi.toFixed(1);
+
+// Used to calculate the daily protein goal in grams, rounded down to the nearest whole number, based on the inputed weight
+  
 let protein = Math.round(1.9 * numericWeight);
+
+// Used to calculate the daily fat consumption goal in grams, rounded down to the nearest whole number, based on the overall required calories
+  
 let fats = Math.round((0.2 * caloriesOut)/9);
+
+// Used to calculate the daily carbohydrate consumption goal in grams, rounded down to the nearest whole number, based on the overall required calories, proteins and fats
+  
 let carbs = Math.round(caloriesOut - (protein * 4) - (fats * 9))/4;
+
+// Used to calculate daily water consumption based on inputed weight and activity level
+  
 let water = (0.0295735 * numericWeight) + (extraWater * 0.0295735);
+
+// Used to fix the daily water consumption to two decimal places
+  
 let waterOut = water.toFixed(2);
+
+// The results are returned based on the above calculations and placed into the inner html using template literals
 
   results.innerHTML = `
 <table>
@@ -478,5 +560,5 @@ let waterOut = water.toFixed(2);
     <a href="index.htm" aria-label="Return to macroBLASTER"s home page"><div role="button" class="button reload" id="reload">
      <p>Reload</p>
     </div></a>
-`
+`;
 }
