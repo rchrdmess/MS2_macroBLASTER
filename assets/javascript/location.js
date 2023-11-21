@@ -1,9 +1,13 @@
 /*global document*/
 
+// Function to set the event listener once the all the DOM content is loaded. The event listener will then run the findGym function when the element with the openMapsButton ID is clicked
+
 document.addEventListener("DOMContentLoaded", function () {
     let openMapsButton = document.getElementById("openMapsButton");
     openMapsButton.addEventListener("click", findGym);
 });
+
+// This API takes the user's location from the browser and inserts it into a Google Map search for "Gyms", which opens in a new window
 
 function findGym() {
     if (navigator.geolocation) {
