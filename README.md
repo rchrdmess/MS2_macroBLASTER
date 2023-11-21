@@ -263,6 +263,7 @@ The website consists of eleven distinct pages:
 - [Apple Voice Over](https://support.apple.com/en-gb/guide/iphone/iph3e2e415f/ios)
 - [ChatGPT](https://chat.openai.com)
 - [JSLint](https://www.jslint.com)
+- [JSHint](https://www.jshint.com)
   
 [Back to Contents](#Contents)  
   
@@ -457,7 +458,6 @@ privacy.htm [results](https://wave.webaim.org/report#/https://rchrdmess.github.i
 user_agreement.htm [results](https://wave.webaim.org/report#/https://rchrdmess.github.io/MS2_macroBLASTER/user_agreement.htm) 
 
 404.htm [results](https://wave.webaim.org/report#/https://rchrdmess.github.io/MS2_macroBLASTER/404.htm) 
-
 
 ### Performance
 
@@ -700,6 +700,24 @@ The website was tested on the following browsers:
 [Back to Contents](#Contents)  
   
 ## Bugs
+
+### JS Lint
+
+On passing the main javascript file (all_input_output.js) through JS Lint, one warning is returned against line 81. (See image below.)
+
+This warning has been discounted because, on testing, the function works, and because the code on line 81 is functionally exactly the same as the code on line 96, which returns no warning against it, so it is presumed this is an error with JS Lint.
+
+![JS Lint Results](docs/jslint_results.jpeg) 
+
+### JS Hint
+
+On passing the main javascript file (all_input_output.js) through JS Hint, one warning is returned (which is different to the above JS Lint error) against line 324. (See image below.)
+
+![JS Hint Results](docs/jshint_results.jpeg) 
+
+Although the function works as intended, in an attempt to mitigate this error, the exponential operator (**) was replaced with the Math.pow method and the program re-run. In doing so, the function stopped working altogether, so the original method of using the double asterix was reverted to, and no issues were found upon further testing across numerous browsers and devices.
+
+### During development
 
 Initial attempts to incorporate the affect of age on the number of calories required each day involved the use of a data table provided by Colorado State University and a complicated set of if/else statements. (See 'Old Javascript' (below).)
 
