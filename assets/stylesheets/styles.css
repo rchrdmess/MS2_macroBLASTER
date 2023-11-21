@@ -396,12 +396,17 @@ input[type=submit]:hover {
   padding-left: 20%;
 }
 
+.base_left ul,.base_right ul {
+  text-align: left;
+  padding-left: 25%;
+  list-style-type: none;
+}
+
 .base_left a,.base_right a {
   color: #ffffff;
   font-size: 1.5em;
   font-weight: normal;
   text-decoration: none;
-  padding-left: 25%;
   padding-bottom: 0.25rem;
   cursor: pointer;
 }
@@ -577,9 +582,6 @@ input[type=submit]:hover {
 .base_left h3, .base_right h3 {
   padding-left: 0%;
   text-align: center;
-}
-.base_left a, .base_right a {
-  padding-left: 38%;
 }
 ::placeholder {
   padding-left: 23%;
