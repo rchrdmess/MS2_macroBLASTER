@@ -912,10 +912,9 @@ function calculateCalories () {<br>
   return;<br>
   }<br>
 
-
+  
 #### Old HTML
 
-`
 <p>WHAT IS YOUR EXERCISE LEVEL ...</p>
     <div role="button" class='activity_button' id='none' style='background-color: #F6BDC0;'>
      <p>NONE</p>
@@ -936,9 +935,9 @@ function calculateCalories () {<br>
      <p>Exercise 3-5 days/week</p>
     </div>
 
-`
+
 #### New HTML
-`
+
    <p>WHAT IS YOUR EXERCISE LEVEL ...</p>
     <div role="button" class='activity_button' id='none' style='background-color: #8b0001;'>
      <p>NONE</p>
@@ -972,7 +971,7 @@ function calculateCalories () {<br>
      <p>EXTREME</p>
      <p>Exercise & active job</p>
     </div>
-` 
+
 
 #### Old CSS
 
@@ -997,6 +996,7 @@ function calculateCalories () {<br>
   display: inline-block;
   width: 2vw;
 }
+
 
 #### New CSS
 
