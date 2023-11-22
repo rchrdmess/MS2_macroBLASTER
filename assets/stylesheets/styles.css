@@ -288,6 +288,8 @@ input[type=search], select, textarea {
   text-align: center;
   width: 20vw;
   padding: 1.5vw;
+  color: navy;
+  font-size: 2.5vw;
   border: 0.0625em solid navy;
   border-radius: 0.625em;
   box-sizing: border-box;
