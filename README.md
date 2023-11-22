@@ -39,9 +39,19 @@ The website is designed to be accessible and uniform across all devices, allowin
     6. [Browser compatibility](#browser-compatibility)
     7. [Testing user stories](#testing-user-stories)
 8. [Bugs](#bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
-11. [Acknowledgements](#acknowledgements)
+    1. [JS Lint](#js-lint)
+    2. [JS Hint](#js-hint)
+    3. [During Development](#during-development)
+    4. [Old Javascript](#old-javascript)
+    5. [New Javascript](#new-javascript)
+    6. [Old HTML](#old-html)
+    7. [New HTML] (#new-html)
+    8. [Old CSS](#old-css)
+    9. [New CSS](#new-css)
+    10. [Results](#results)
+10. [Deployment](#deployment)
+11. [Credits](#credits)
+12. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
