@@ -45,7 +45,7 @@ The website is designed to be accessible and uniform across all devices, allowin
     4. [Old Javascript](#old-javascript)
     5. [New Javascript](#new-javascript)
     6. [Old HTML](#old-html)
-    7. [New HTML] (#new-html)
+    7. [New HTML](#new-html)
     8. [Old CSS](#old-css)
     9. [New CSS](#new-css)
     10. [Results](#results)
