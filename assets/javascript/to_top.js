@@ -1,4 +1,4 @@
-// The below comment is used on every page to tell the browser to assume standard browser properties. Advised to use by Chatgpt to prevent JSLint from thinking certain commands are variables
+// The below comment is used on every page to declare global propertiesr properties. Advised to use this by Chatgpt to prevent JSLint from thinking certain commands are variables
 
 /*global document*/
 
