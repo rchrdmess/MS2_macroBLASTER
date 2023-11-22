@@ -972,7 +972,8 @@ function calculateCalories () {<br>
      <p>EXTREME</p>
      <p>Exercise & active job</p>
     </div>
-`
+` 
+
 #### Old CSS
 
 .button {
